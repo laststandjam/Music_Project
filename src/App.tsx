@@ -8,7 +8,7 @@ function App() {
     <div className="App">
 
       <h3>Start Listenting</h3>
-      
+      <Route path="/Albums"><Album_List/></Route>
       <Link href="/Albums">Click me</Link>
  
     </div>
