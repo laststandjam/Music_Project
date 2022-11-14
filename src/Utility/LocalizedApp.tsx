@@ -1,5 +1,5 @@
-import messages_en from "../../public/urls_en.json";
-import messages_sp from "../../public/urls_sp.json";
+import messages_en from "../Localizations/urls_en.json";
+import messages_sp from "../Localizations/urls_sp.json";
 
 import React, { useEffect, useMemo } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
@@ -34,3 +34,5 @@ export const LocalizedApp: React.FC<LocalizedAppProps> = ({lang}) => {
         </IntlProvider>
     )
 }
+
+export default LocalizedApp;
