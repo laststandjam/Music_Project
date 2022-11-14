@@ -10,7 +10,7 @@ import Cookies from 'universal-cookie';
 
 export const messages: { [index: string]: any } = {
     'en': messages_en,
-    'sk': messages_sp
+    'sp': messages_sp
 }
 
 interface LocalizedAppProps{

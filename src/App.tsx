@@ -9,16 +9,16 @@ import {Album_List} from "./Pages/Album_List"
 
 function App() {
   const {formatMessage} = useIntl()
-console.log(formatMessage({id:'Route.albums'}))
+console.log(JSON.stringify(formatMessage({id:'Route.albums'})))
   return (
     <div className="App">
 
       <h3>Start Listenting</h3>
     
 
-      <Link to={`/${formatMessage({ id: 'Route.albums' })}`} >Click me</Link>
+      <Link to={JSON.stringify(formatMessage({id:'Route.albums'}))} >Click me</Link>
       <Routes>
-   <Route path={"/Albums"} element={<Album_List/>} /></Routes>
+   <Route path={`/"albums"`} element={<Album_List/>} /></Routes>
     </div>
   );
 }
