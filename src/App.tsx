@@ -4,21 +4,24 @@ import { useIntl } from 'react-intl';
 import { Navigate, Route, Routes, Link } from 'react-router-dom';
 
 import './App.css';
-import {Album_List} from "./Pages/Album_List"
+import {Navbar} from "./Components/Navbar"
+import { Album_List } from "./Pages/Album_List"
+import Band_List from './Pages/Band_List';
 
 
 function App() {
-  const {formatMessage} = useIntl()
-console.log(JSON.stringify(formatMessage({id:'Route.albums'})))
+
+  const intl = useIntl()
+  const { formatMessage } = useIntl()
+  console.log(JSON.stringify(formatMessage({ id: 'Route.albums' })))
   return (
     <div className="App">
 
-      <h3>Start Listenting</h3>
-    
-
-      <Link to={JSON.stringify(formatMessage({id:'Route.albums'}))} >Click me</Link>
+     <Navbar/>
       <Routes>
-   <Route path={`/"albums"`} element={<Album_List/>} /></Routes>
+        <Route path={"/"+intl.formatMessage({id: 'Route.albums' })} element={<Album_List />} />
+        <Route path={"/"+intl.formatMessage({id: 'Route.band' })} element={<Band_List/>}/>
+      </Routes>
     </div>
   );
 }

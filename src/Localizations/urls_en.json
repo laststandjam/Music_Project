@@ -1,6 +1,10 @@
 {   
     "locale": "en-US",
     "Route.home" : "Home",
-    "Route.albums": "Albums"
+    "Route.albums": "albums",
+    "Route.bands": "bands",
+    "Route.song": "songs"
+
+    
 
 }

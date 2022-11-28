@@ -7,7 +7,7 @@ interface Props {
 const Band_List = (props: Props) => {
     return (
         <div>
-            
+            <h1>Band List</h1>
         </div>
     )
 }
