@@ -18,9 +18,10 @@ function App() {
     <div className="App">
 
      <Navbar/>
+
       <Routes>
         <Route path={"/"+intl.formatMessage({id: 'Route.albums' })} element={<Album_List />} />
-        <Route path={"/"+intl.formatMessage({id: 'Route.band' })} element={<Band_List/>}/>
+        <Route path={"/"+intl.formatMessage({id: 'Route.bands' })} element={<Band_List/>}/>
       </Routes>
     </div>
   );

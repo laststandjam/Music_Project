@@ -30,8 +30,8 @@ const Navbar = (props: Props) => {
             <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800'>
                 <ul className='md-center'>
-                    {links.map((link)=>(
-                   <li> <Link to={link.path} > {link.name} </Link> </li>
+                    {links.map((link, i)=>(
+                   <li key={i}> <Link to={link.path} > {link.name} </Link> </li>
                     ))}
                 </ul>
                 </div>

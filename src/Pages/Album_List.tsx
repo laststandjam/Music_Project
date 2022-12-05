@@ -8,10 +8,13 @@ import {Albums} from "../Components/Albums"
 const Album_List: React.FC = ()=>{
 
     return(
-        <div>
-            <h1>Album list</h1>
+        <>
+        <div className="relative">
+            <h1>Album list</h1>  
+            </div>
             <Albums/>
-        </div>
+            </>
+      
     )
 }
 
