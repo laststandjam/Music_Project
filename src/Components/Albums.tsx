@@ -46,17 +46,21 @@ return(
 
 <>
 
+
+//loading component
+
 {loading
 ?<div>"Loading"</div>
 :
-albums.map((album, i)=>(
-  <div className='shadow-md w-full relative bottom-50 left-50' key={i}>
+<div className="display flex relative">
+{albums.map((album, i)=>(
+  <div className='shadow-md w-full relative bottom-50 left-50 flex' key={i}>
   <h1>{album.elements.title.value}</h1>
-  <img src={album.elements.coverArt.value[0]}/>
+  <img src={album.elements.coverArt.linkedItems[0].elements.asset.value[0].url}/>
  
   </div>
   ))}
-
+</div>}
 </>
 )
 
