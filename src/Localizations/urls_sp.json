@@ -1,5 +1,6 @@
 {
     "locale": "sp-SP",
-    "header.homeLinkTitle" : "Casa",
-    "header.alubmLinkTitle": "álbum"
+    "Route.home" : "Casa",
+    "Route.album": "álbum",
+    "Route.band" : "band"
 }
