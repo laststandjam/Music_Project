@@ -38,4 +38,12 @@ export type Song = IContentItem<{
    * Codename: lyrics
    */
   lyrics: Elements.RichTextElement;
+
+  /**
+   * Song Link (text)
+   * Required: true
+   * Id: ada6d09a-e90f-4912-8986-66f1854b4e6f
+   * Codename: song_link
+   */
+  songLink: Elements.TextElement;
 }>;

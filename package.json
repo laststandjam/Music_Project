@@ -6,6 +6,7 @@
   "dependencies": {
     "@kontent-ai/delivery-sdk": "^12.2.0",
     "@kontent-ai/model-generator": "^5.7.0",
+    "@kontent-ai/react-components": "^0.2.2",
     "@material-tailwind/react": "^1.2.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
