@@ -27,6 +27,13 @@ root.render(
                     />
                 ))}
                 <Route path="/" element={<Navigate to={`/${lang.toLowerCase()}`} />} />
+                {["en", "sk"].map((value) => (
+                    <Route
+                        key={value}
+                        path={`/preview${value.toLowerCase()}/*`}
+                        element={<LocalizedApp lang={value} />}
+                    />
+                ))}
                 <Route path="*" element={<Navigate to={`/${lang.toLowerCase()}/404`} />} />
             </Routes>
 </BrowserRouter>

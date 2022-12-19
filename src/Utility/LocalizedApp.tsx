@@ -15,6 +15,7 @@ export const messages: { [index: string]: any } = {
 
 interface LocalizedAppProps{
     lang: string
+
 }
 
 export const LocalizedApp: React.FC<LocalizedAppProps> = ({lang}) => {
