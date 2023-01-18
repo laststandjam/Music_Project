@@ -7930,6 +7930,14 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
+"react-spotify-embed@^1.0.4":
+  "integrity" "sha512-pgDh/K2KlmZ6z+18EHgTfsnZDNeHGsck+VIIbM/bC5qkE57YIwkxaTNMq9CzgB6jXDjjjRgAdU5j8cmNsB8L2w=="
+  "resolved" "https://registry.npmjs.org/react-spotify-embed/-/react-spotify-embed-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "react" "^18.2.0"
+    "react-dom" "^18.2.0"
+
 "react@^16 || ^17 || ^18", "react@^16.6.0 || 17 || 18", "react@^16.9.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.12.0", "react@>=16.8", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@0.14 || 15 || 16 || 17 || 18":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
