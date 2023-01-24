@@ -4,9 +4,12 @@ import { Album as AlbumType } from '../models/album'
 import { Song as SongType } from "../models/song"
 import Spotify from "react-spotify-embed"
 import { RichTextElement } from '@kontent-ai/react-components'
+import {test} from "../Utility/Manegment"
+
 interface Props {
     // album: AlbumType = location.state.album
 }
+
 
 const Album_Detail = (props: Props) => {
 
@@ -21,6 +24,7 @@ const Album_Detail = (props: Props) => {
         // Create a new set of expanded items by copying the current set
         // and adding/removing the clicked item depending on whether it's
         // currently expanded or not.
+        test()
         const newExpandedItems = new Set(expandedItems);
         if (expandedItems.has(itemId)) {
             newExpandedItems.delete(itemId);
